@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Remove trailing slashes
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+  # Rewrite rules
+  RewriteRule ^$ /home/index.html [L]
+  RewriteRule ^about$ /about_us/index.html [L]
+  RewriteRule ^industries$ /industries/index.html [L]
+  RewriteRule ^product$ /products/index.html [L]
+  RewriteRule ^service$ /services/index.html [L]
+  RewriteRule ^not_found$ /not_found/index.html [L]
+  RewriteRule ^contact$ /contact_us/index.html [L]
+
+  # Handle 404 errors
+  ErrorDocument 404 /not_found/index.html
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Security headers
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+</IfModule>

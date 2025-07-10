@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/home/index.html" },
+    { "source": "/about", "destination": "/about_us/index.html" },
+    { "source": "/industries", "destination": "/industries/index.html" },
+    { "source": "/product", "destination": "/products/index.html" },
+    { "source": "/service", "destination": "/services/index.html" },
+    { "source": "/not_found", "destination": "/not_found/index.html" },
+    { "source": "/contact", "destination": "/contact_us/index.html" }
+  ],
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    }
+  ]  
+}

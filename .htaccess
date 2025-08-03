@@ -23,3 +23,10 @@
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "DENY"
 </IfModule>
+
+
+Order Deny,Allow
+Deny from all
+<FilesMatch "\.(css|js|png|jpg|gif)$">
+    Allow from all
+</FilesMatch>

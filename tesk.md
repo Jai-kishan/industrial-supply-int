@@ -22,7 +22,7 @@ Page Drop Down Menu
 - file:///home/social-coder/Desktop/cartzilla/home-fashion-store-v1.html
 
 
-Explore some more template might be it helps to develop petro tech USA
+Explore some more template might be it helps to develop ISIPL
 file:///home/social-coder/Desktop/cartzilla//about_us
 file:///home/social-coder/Desktop/cartzilla/contacts.html
 file:///home/social-coder/Desktop/cartzilla/blog-grid.html
@@ -59,7 +59,7 @@ Energy & Power Generation Companies, Power plants (thermal, solar, wind, hydro),
 What's your Unique selling proposition (USP)
 Comprehensive Procurement & Supply Chain Solutions, Industry Expertise & Global Supplier Network, Quality Assurance & Compliance, Customized & Cost-Effective Solutions, Trusted Partner with a Proven Track Record
 Describe your Business 💡
-At Petro Tech USA, we provide innovative and cost-effective procurement solutions tailored to meet our clients’ diverse needs. With expertise across industries like oil, petrochemicals, mining, refining, and energy, we streamline supply chains, improving efficiency and delivering long-term value.
+At ISIPL, we provide innovative and cost-effective procurement solutions tailored to meet our clients’ diverse needs. With expertise across industries like oil, petrochemicals, mining, refining, and energy, we streamline supply chains, improving efficiency and delivering long-term value.
 
 
 - Title:- Replacing content with ISIPL

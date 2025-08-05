@@ -127,3 +127,29 @@ Onshore and Offshore Equipment:
 5. Onshore Pipelines
     5.1 Transmission Pipelines
     5.2 Distribution Pipelines
+
+
+
+
+
+
+
+ISIPL Categorties
+# Oil and Gas
+Valves & Actuators
+Instrumentation & Controls
+Pipeline & Fittings
+Specialty Fasteners
+Marine Equipment & Spares
+Spill Kits
+Structural Steel
+Shutdown Materials
+MRO Tools & Consumables\
+
+# Mining Sector
+Heavy Machinery & Spare Parts
+Lifting & Rigging Equipment
+Wear Plates & Wear Parts
+Conveyors & Conveyor Parts
+Welding Supplies & Safety Equipment
+Heavy-Duty Fasteners & Fixings

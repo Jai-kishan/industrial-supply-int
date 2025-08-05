@@ -64,8 +64,16 @@ At ISIPL, we provide innovative and cost-effective procurement solutions tailore
 
 - Title:- Replacing content with ISIPL
 - Author: Jai
-- Date: 04-Aug-2025
-	- Updated favicon
-    - Updated logo for all pages
-    - Added Oil & Gas and Mining Industries
+- Date: 05-Aug-2025
+	- Updated nav bar for oil and gas and mining sector
+    - Changed images on few places
+    - added our impact section
+    - indistries we server and about us updated on the home page
 
+- Title:- Replacing content with ISIPL
+- Author: Jai
+- Date: 06-Aug-2025
+    - Updated images  and description for scope of our business
+    - Updated images for industries we server
+    - banner right to left slider image and conentet has been updated
+    - up to down text slider content has been updated

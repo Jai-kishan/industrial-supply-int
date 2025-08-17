@@ -1,0 +1,62 @@
+.about-page-facts {
+  background: linear-gradient(rgba(1, 10, 53, .8), rgba(1, 10, 53, .8)), url('../img/slider/oil-n-gas.png');
+}
+
+
+/* data-parallax="scroll" data-image-src="../img/slider/oli-&-gas-industry.png"
+data-parallax="scroll" data-image-src="../img/slider/power-n-energy.png" */
+
+.stats {
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stats h2 {
+  color: var(--secondary);
+}
+
+.stats p {
+  color: var(--white);
+}
+
+
+.stat-item {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-item i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--light);
+
+}
+
+.stat-item p {
+  font-size: 1rem;
+  opacity: 0.9;
+  color: var(--primary);
+
+}

@@ -14,12 +14,13 @@
     z-index: 99;
 }
 
-body {
+/* Disable select text  */
+/* body {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-}
+} */
 
 img {
     pointer-events: none;

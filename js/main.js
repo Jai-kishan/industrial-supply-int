@@ -74,24 +74,24 @@
         ]
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('img').forEach(img => {
-            img.oncontextmenu = () => false; // Disable right-click on images
-        });
-    });
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     document.querySelectorAll('img').forEach(img => {
+    //         img.oncontextmenu = () => false; // Disable right-click on images
+    //     });
+    // });
 
-    // Disable right-click
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    // // Disable right-click
+    // document.addEventListener('contextmenu', event => event.preventDefault());
 
-    // Disable keyboard shortcuts (Ctrl+C, Ctrl+U, Ctrl+P, F12, etc.)
-    document.addEventListener('keydown', event => {
-        if (event.ctrlKey && (event.key === "c" || event.key === "u" || event.key === "p")) {
-            event.preventDefault();
-        }
-        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
-            event.preventDefault();
-        }
-    });    
+    // // Disable keyboard shortcuts (Ctrl+C, Ctrl+U, Ctrl+P, F12, etc.)
+    // document.addEventListener('keydown', event => {
+    //     if (event.ctrlKey && (event.key === "c" || event.key === "u" || event.key === "p")) {
+    //         event.preventDefault();
+    //     }
+    //     if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+    //         event.preventDefault();
+    //     }
+    // });    
     
 })(jQuery);
 

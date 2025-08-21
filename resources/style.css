@@ -1,0 +1,14 @@
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(1, 10, 53, .65);
+    /* background: rgba(0, 0, 0, .65); */
+    z-index: 1;
+}

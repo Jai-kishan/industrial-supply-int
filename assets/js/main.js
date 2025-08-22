@@ -71,6 +71,3 @@ document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
   });
 
 });
-
-
-

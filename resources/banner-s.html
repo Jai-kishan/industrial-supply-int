@@ -17,16 +17,19 @@
         }
 
         .slider-track {
-            /* display: flex; */
-            /* white-space: nowrap; */
             display: flex;
-            gap: 20px;
-            animation: scroll 10s linear infinite;
+            white-space: nowrap;
+            transform: translateX(0);
         }
 
         .slider-track:hover {
-            animation-play-state: paused;
+            animation-play-state: paused !important;
         }
+
+        .slider-container:hover .slider-track {
+            animation-play-state: paused !important;
+        }
+
 
         .banner-slider-item {
             flex: 0 0 auto;
@@ -80,16 +83,6 @@
             text-decoration: none;
             border-radius: 5px;
         }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-250%);
-            }
-        }
     </style>
 </head>
 
@@ -98,8 +91,9 @@
         <div class="slider-track">
             <!-- https://via.placeholder.com/300x200 -->
 
+
             <div class="banner-slider-item">
-                <img src="/assets/img/oil-n-gas.png" alt="Valves & Actuators">
+                <img src="/assets/img/oil-n-gas.png" alt="Oil & Gas">
                 <h1 style="margin-bottom: 4rem;">Oil & Gas</h1>
             </div>
 
@@ -134,7 +128,7 @@
             </div>
 
             <div class="banner-slider-item">
-                <img src="../img/service/ISIPL/Marine-Equipment-&-Spares.png" alt="Marine Equipment & Spares">
+                <img src="../img/service/drilling-chemicals-sludge-filtration.png" alt="Marine Equipment & Spares">
                 <h3>Marine Equipment & Spares</h3>
                 <p class="mb-0">We supply marine equipment and critical spares for oilfield vessels, ensuring
                     safety, compliance, and performance in offshore oil and gas environments.</p>
@@ -168,14 +162,17 @@
                 <img src="../img/service/ISIPL/MRO-Tools-&-Consumables.png" alt="MRO Tools & Consumables">
                 <h3>MRO Tools & Consumables</h3>
                 <p class="mb-0">Our MRO supplies cover tools, consumables, and maintenance essentials required
-                    for daily operation and upkeep in oil and gas environments.</p>
+                    for daily operation and upkeep in oil and gas environmentss.</p>
                 <a class="m-0" href="#">View Products</a>
             </div>
-            <!-- Mining Section -->
+
+
+            <!-- Mining Sector -->
             <div class="banner-slider-item">
-                <img src="/assets/img/oil-n-gas.png" alt="Valves & Actuators">
+                <img src="/assets/img/petroleum-refining-1.png" alt="Mining Sector">
                 <h1 style="margin-bottom: 4rem;">Mining Sector</h1>
             </div>
+
 
             <div class="banner-slider-item">
                 <img src="../img/service/ISIPL/Heavy-Machinery-&-Spare-Parts.png" alt="Heavy Machinery & Spare Parts">
@@ -186,7 +183,7 @@
             </div>
 
             <div class="banner-slider-item">
-                <img src="../img/service/lifting-rigging-equipment-tools.png" alt="Lifting & Rigging Equipment">
+                <img src="../img/service/ISIPL/Lifting-&-Rigging-Equipment.png" alt="Lifting & Rigging Equipment">
                 <h3>Lifting & Rigging Equipment</h3>
                 <p class="mb-0">Ensure worker safety and operational precision with our trusted lifting and
                     rigging equipment, suited for tough mining environments and heavy loads.</p>
@@ -224,45 +221,25 @@
                     mining equipment under extreme operational stresses and harsh.</p>
                 <a class="m-0" href="#">View Products</a>
             </div>
-
-            <!-- Oil and Gas -->
-            <div class="banner-slider-item">
-                <img src="/assets/img/oil-n-gas.png" alt="Valves & Actuators">
-                <h1 style="margin-bottom: 4rem;">Oil & Gas</h1>
-            </div>
-
-            <div class="banner-slider-item">
-                <img src="../img/service/ISIPL/Valves-&-Actuators.png" alt="Valves & Actuators">
-                <h3>Valves & Actuators</h3>
-                <p class="mb-0">We supply a wide range of valves and actuators engineered for durability and
-                    precision, ensuring efficient flow control and safety in oil and gas systems.</p>
-                <a class="m-0" href="#">View
-                    Products</a>
-            </div>
-            <div class="banner-slider-item">
-                <img src="../img/service/ISIPL/Instrumentation-&-Controls.png" alt="Instrumentation & Controls">
-                <h3>Instrumentation & Controls</h3>
-                <p class="mb-0">Enhance process visibility and control with our advanced instrumentation and
-                    automation solutions, built for harsh environments in oil and gas installations</p>
-                <a class="m-0" href="#">View Products</a>
-            </div>
-            <div class="banner-slider-item">
-                <img src="../img/service/ISIPL/Pipeline-&-Fittings.png" alt="Pipeline & Fittings">
-                <h3>Pipeline & Fittings</h3>
-                <p class="mb-0">We provide durable pipelines and precision fittings engineered to withstand
-                    high pressure and temperature conditions, supporting the integrity of oil and gas.</p>
-                <a class="m-0" href="#">View Products</a>
-            </div>
-            <div class="banner-slider-item">
-                <img src="../img/service/ISIPL/Specialty-Fasteners.png" alt="Specialty Fasteners">
-                <h3>Specialty Fasteners</h3>
-                <p class="mb-0">Our specialty fasteners are designed for extreme oil and gas environments,
-                    ensuring long-term reliability and compliance with industry-specific.</p>
-                <a class="m-0" href="#">View Products</a>
-            </div>
-
         </div>
     </section>
+
+    <script>
+
+        const track = document.querySelector('.slider-track');
+        let position = 0;
+
+        function animateSlider() {
+            position -= 1.5; // speed (1px per frame)
+            if (Math.abs(position) >= track.scrollWidth) {
+                position = 0; // reset when fully scrolled
+            }
+            track.style.transform = `translateX(${position}px)`;
+            requestAnimationFrame(animateSlider);
+        }
+
+        animateSlider();
+    </script>
 </body>
 
 </html>

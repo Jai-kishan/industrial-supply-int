@@ -121,3 +121,13 @@
   border-radius: 5px;
 }
 
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-80%);
+  }
+}

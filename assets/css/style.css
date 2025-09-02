@@ -7,15 +7,13 @@
   --default-color: #444444;
   --contrast-color: #ffffff;
   --accent-color: #2086b8;
-
-
-
 }
 
 .light-background {
   --background-color: #f9f5f4;
   --surface-color: #ffffff;
 }
+
 
 .dark-background {
   --background-color: #060606;
@@ -717,24 +715,24 @@ data-parallax="scroll" data-image-src="../img/slider/power-n-energy.png" */
 
 
 .container-xxl {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, .75rem);
-    padding-left: var(--bs-gutter-x, .75rem);
-    margin-right: auto;
-    margin-left: auto
+  width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: auto;
+  margin-left: auto
 }
 
 
 @media (min-width: 1400px) {
 
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl,
-    .container-xxl {
-        max-width: 1320px
-    }
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    max-width: 1320px
+  }
 }
 
 /* .navbar>.container-xxl {
@@ -747,14 +745,14 @@ data-parallax="scroll" data-image-src="../img/slider/power-n-energy.png" */
 
 /* Sub title for industries page */
 .sub-title {
-    position: relative;
-    display: inline-block;
-    /* text-transform: uppercase; */
-    color: var(--primary);
+  position: relative;
+  display: inline-block;
+  /* text-transform: uppercase; */
+  color: var(--primary);
 }
 
 .service-img-fluid {
-    max-width: 100%;
-    height: auto;
-    margin-right: 1rem;
+  max-width: 100%;
+  height: auto;
+  margin-right: 1rem;
 }
